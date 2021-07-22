@@ -3,6 +3,7 @@ netty自定义解码器处理粘包、半包问题
 
 主要处理的协议格式为：head(定长)+body
 这里我使用简单格式的协议，我们把它命名为：**TinyProtocol**
+
 TinyProtocol协议分为 Head 和 Body 连个部分
 + Head是固定的2个字节，保持内容就是Body的长度
 + Body按照Head中存储的长度存储内容
